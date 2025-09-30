@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech for Sports Development</title>
+  <style>
+    /* ===== General Styles ===== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f9;
+      line-height: 1.6;
+      color: #333;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== Header ===== */
+    header {
+      background: linear-gradient(135deg, #2c3e50, #4ca1af);
+      color: white;
+      text-align: center;
+      padding: 50px 20px;
+    }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { font-size: 1.2rem; margin-top: 10px; }
+
+    /* ===== Navigation ===== */
+    nav {
+      background: #333;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      display: inline-block;
+      padding: 14px 20px;
+      color: white;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+    nav a:hover { background: #4ca1af; border-radius: 5px; }
+
+    /* ===== Notice ===== */
+    .notice {
+      background-color: #ffcc00;
+      color: #000;
+      text-align: center;
+      padding: 15px;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      margin: 10px auto;
+      width: 90%;
+      animation: blink 1.5s infinite;
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0.6; }
+      100% { opacity: 1; }
+    }
+
+    /* ===== Sections ===== */
+    section {
+      width: 80%;
+      margin: 30px auto;
+      padding: 30px;
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    section:hover { transform: translateY(-5px); }
+    h2 { color: #2c3e50; margin-bottom: 20px; }
+    ul { line-height: 1.8; }
+
+    /* ===== Gallery ===== */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover { transform: scale(1.05); }
+
+    /* ===== Contact Form ===== */
+    form { display: flex; flex-direction: column; }
+    input, textarea {
+      margin: 10px 0;
+      padding: 12px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      font-size: 1rem;
+    }
+    button {
+      padding: 12px;
+      background: #4ca1af;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover { background: #2c3e50; }
+
+    /* ===== Survey Section ===== */
+    .survey img {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+    }
+
+    /* ===== Charts Section ===== */
+    .charts iframe {
+      width: 100%;
+      max-width: 600px;
+      height: 300px;
+      margin-bottom: 20px;
+      border: 0;
+    }
+
+    /* ===== Footer ===== */
+    footer {
+      background: #2c3e50;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+
+    /* ===== Responsive ===== */
+    @media (max-width: 600px) {
+      nav a { display: block; padding: 10px; }
+      header h1 { font-size: 1.8rem; }
+      .survey img { max-width: 180px; }
+      .charts iframe { height: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header / Home -->
+  <header>
+    <h1>Tech for Sports Development</h1>
+    <p>Empowering Sports through Technology</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#objectives">Objectives</a>
+    <a href="#features">Features</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#survey">Survey</a>
+    <a href="#Registration Form">Registration Form</a>
+    <a href="#report">Report</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Notice -->
+  <div class="notice">
+    🚨 The sports events are started! Don’t forget to register with your team for your favourite sport!!!🏆
+  </div>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2>About the Project</h2>
+    <p>This project focuses on using technology to support sports development by providing resources, training, and a platform for athletes, coaches, and communities.</p>
+  </section>
+
+  <!-- Objectives Section -->
+  <section id="objectives">
+    <h2>Objectives</h2>
+    <ul>
+      <li>Enhance accessibility to sports resources</li>
+      <li>Encourage youth participation in sports</li>
+      <li>Bridge the gap between technology and physical development</li>
+      <li>Promote awareness of sports opportunities</li>
+    </ul>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <h2>Key Features</h2>
+    <ul>
+      <li>Information hub for sports initiatives</li>
+      <li>Upload and share images/videos</li>
+      <li>Provide training tips for athletes</li>
+      <li>Interactive and engaging community content</li>
+    </ul>
+  </section>
+
+  <!-- Gallery Section -->
+  <!-- Gallery Section -->
+<section id="gallery">
+  <h2>College Sports Events</h2>
+  <div class="gallery">
+    <figure>
+      <img src="images/cricket-img.jpg" alt="Cricket">
+      <figcaption>Cricket</figcaption>
+    </figure>
+    <figure>
+      <img src="images/chess.jpg" alt="Chess">
+      <figcaption>Chess</figcaption>
+    </figure>
+    <figure>
+      <img src="images/vollyball.jpg" alt="Volleyball">
+      <figcaption>Volleyball</figcaption>
+    </figure>
+    <figure>
+      <img src="images/tennis2.jpg" alt="Tennis">
+      <figcaption>Tennis</figcaption>
+    </figure>
+  </div>
+</section>
+
+<style>
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  text-align: center;
+}
+
+.gallery figure {
+  margin: 0;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.gallery figcaption {
+  margin-top: 8px;
+  font-weight: bold;
+  color: #2c3e50;
+  font-size: 1rem;
+}
+</style>
+
+
+  <!-- Survey Section -->
+  <section id="survey">
+    <h2>Student Sports Survey</h2>
+    <p>Submit your thoughts and suggestions about sports development:</p>
+    <div class="survey">
+      <img src="images/qr.png" alt="QR Code to Google Form">
+    </div>
+  </section>
+
+  <!-- Survey Results Section -->
+  <section id="survey-results">
+    <h2>Survey Results</h2>
+    <div class="charts">
+      <h4>Favourite Games:</h4>
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTRa_qO8yT4eO5EixqGCvOiaa0EALZZNCgnt0e1vA7PQZcn6QbiXFgaVTQnmAPfrs7q0TbFqIBFIH5Z/pubchart?oid=1780665046&amp;format=interactive"></iframe>
+
+      <h4>Sport Games:</h4>
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTRa_qO8yT4eO5EixqGCvOiaa0EALZZNCgnt0e1vA7PQZcn6QbiXFgaVTQnmAPfrs7q0TbFqIBFIH5Z/pubchart?oid=1000921025&amp;format=interactive"></iframe>
+
+      <h4>E-Sport Games:</h4>
+      <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTRa_qO8yT4eO5EixqGCvOiaa0EALZZNCgnt0e1vA7PQZcn6QbiXFgaVTQnmAPfrs7q0TbFqIBFIH5Z/pubchart?oid=798124436&amp;format=interactive"></iframe>
+    </div>
+  </section>
+
+ 
+    <!-- Registration Section -->
+<section id="Registration Form">
+  <h2>Registration Form</h2>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLScSCbNMSoQjU7u3Gvy5Wjs1poQ9BufjiOinFQSp4Zqs47wdUQ/viewform?usp=header" 
+     class="fancy-btn">📝 Register Now</a>
+</section>
+
+<!-- Report Section -->
+<section id="report">
+  <h2>Report</h2>
+  <a href="report.html" class="fancy-btn">📑 View Report</a>
+</section>
+
+<style>
+.fancy-btn {
+  display: inline-block;
+  padding: 14px 35px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background: linear-gradient(45deg, #ff6f61, #d84315); /* orange-red gradient */
+  border: none;
+  border-radius: 30px; /* more rounded */
+  text-decoration: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+  letter-spacing: 1px;
+}
+
+.fancy-btn:hover {
+  background: linear-gradient(45deg, #d84315, #ff6f61);
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+.fancy-btn:active {
+  transform: translateY(2px) scale(0.98);
+  box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+}
+</style>
+ <section id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Tech for Sports Development | All Rights Reserved</p>
+  </footer>
+
+</body>
+</html>
